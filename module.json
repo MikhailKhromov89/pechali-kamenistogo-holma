@@ -1,0 +1,94 @@
+{
+  "id": "pechali-kamenistogo-holma",
+  "title": "Печали каменистого холма",
+  "description": "Приключение для 4-х игроков 3-го уровня. Василиск бродит в руинах недалеко от города. За его голову объявлена награда. И кто же осмелится выйти против чудища?",
+  "version": "1.0.0",
+  "url": "",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14"
+  },
+  "manifest": "",
+  "download": "",
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "5.3.3",
+          "verified": "5.3.3"
+        }
+      }
+    ],
+    "recommends": [
+      {
+        "id": "ru-ru",
+        "type": "module"
+      },
+      {
+        "id": "item-piles",
+        "type": "module"
+      },
+      {
+        "id": "itempilesdnd5e",
+        "type": "module"
+      },
+      {
+        "id": "sequencer",
+        "type": "module"
+      },
+      {
+        "id": "fxmaster",
+        "type": "module"
+      }
+    ]
+  },
+  "authors": [
+    {
+      "name": "Khromov Mikhail",
+      "discord": "https://discord.gg/AdbXFjny9",
+      "url": ""
+    }
+  ],
+  "esmodules": [
+    "scripts/main.mjs"
+  ],
+  "media": [
+    {
+      "type": "setup",
+      "url": "modules/pechali-kamenistogo-holma/assets/art/adventure-cover.png",
+      "thumbnail": "modules/pechali-kamenistogo-holma/assets/art/adventure-cover.png",
+      "loop": false,
+      "flags": {}
+    }
+  ],
+  "packs": [
+    {
+      "name": "adventure",
+      "label": "Приключение",
+      "banner": "modules/pechali-kamenistogo-holma/assets/art/adventure-cover.png",
+      "path": "packs/pechali-kamenistogo-holma",
+      "type": "Adventure",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "dnd5e",
+      "flags": {}
+    }
+  ],
+  "quickstart": {
+    "adventures": {
+      "dnd5e": {
+        "uuid": "Compendium.pechali-kamenistogo-holma.adventure.Adventure.5EtpvyguuGHCf2rk"
+      }
+    },
+    "postImport": true,
+    "world": {
+      "background": "modules/pechali-kamenistogo-holma/assets/art/adventure-cover.png",
+      "cover": "modules/pechali-kamenistogo-holma/assets/art/adventure-cover.png",
+      "description": "Приключение для 4-х игроков 3-го уровня. Василиск бродит в руинах недалеко от города. За его голову объявлена награда. И кто же осмелится выйти против чудища?"
+    }
+  }
+}

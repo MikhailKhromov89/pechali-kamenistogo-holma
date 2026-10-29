@@ -1,0 +1,30 @@
+{
+  "name": "Портрет",
+  "type": "script",
+  "author": "h6kS0qkSgEzoxZ7H",
+  "img": "icons/svg/dice-target.svg",
+  "scope": "global",
+  "command": "const portraitName = \"SvenPortrait\";\nconst portraitFile = \"worlds/ruiny/assets/portraits/svan.png\";\nconst position = { x: 300, y: 700 };\nconst scale = 0.6;\nconst fadeTime = 500;\n\nif (Sequencer.EffectManager.getEffects({ name: portraitName }).length > 0) {\n  Sequencer.EffectManager.endEffects({ name: portraitName });\n  ui.notifications.info(\"Портрет скрыт.\");\n} else {\n  new Sequence()\n    .effect()\n    .file(portraitFile)\n    .atLocation(position)\n    .scale(scale)\n    .name(portraitName)\n    .fadeIn(fadeTime)\n    .persist()\n    .fadeOut(fadeTime)\n    .play();\n  ui.notifications.info(\"Портрет показан.\");\n}",
+  "folder": null,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "gildiya-oduvanchikov",
+      "uuid": "Macro.jn7s8um4VM1MO47R",
+      "coreVersion": "13.350",
+      "systemId": "dnd5e",
+      "systemVersion": "5.1.10"
+    },
+    "coreVersion": "13.350",
+    "systemId": "dnd5e",
+    "systemVersion": "5.1.10",
+    "createdTime": 1760974529460,
+    "modifiedTime": 1760974605213,
+    "lastModifiedBy": "h6kS0qkSgEzoxZ7H"
+  },
+  "ownership": {
+    "default": 0
+  }
+}

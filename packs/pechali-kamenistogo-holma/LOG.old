@@ -1,0 +1,5 @@
+2026/10/28-16:32:56.748 51dc Recovering log #18
+2026/10/28-16:32:56.750 51dc Level-0 table #20: started
+2026/10/28-16:32:56.823 51dc Level-0 table #20: 99052 bytes OK
+2026/10/28-16:32:56.938 51dc Delete type=0 #18
+2026/10/28-16:32:56.938 51dc Delete type=3 #17
